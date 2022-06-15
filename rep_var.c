@@ -84,7 +84,7 @@ int check_vars(r_var **h, char *in, char *st, data_shell *data)
 
 /**
  * replaced_input - replaces string into variables
- * 
+ *
  * @head: head of the linked list
  * @input: input string
  * @new_input: new input string (replaced)

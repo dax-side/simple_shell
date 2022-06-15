@@ -11,7 +11,7 @@
 
 void set_data(data_shell *datash, char **av)
 {
-	unsined int i;
+	unsigned int i;
 
 	datash->av = av;
 	datash->input = NULL;
@@ -65,7 +65,7 @@ int main(int ac, char **av)
 	data_shell datash;
 	(void) ac;
 
-	signal(SIGINT, get_sighint);
+	signal(SIGINT, get_sigint);
 	set_data(&datash, av);
 	shell_loop(&datash);
 	free_data(&datash);

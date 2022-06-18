@@ -1,8 +1,7 @@
 B.\"Manpage for simple shell
+.\"Created by Joseph Mariga and KarlKamakia
 
-.\"Created by Yusuf Dahud and Kenny David
-
-                                                  .TH SODASH 1 "May 18 2022" "SDDA SHELL - Simple Shell man page"
+.TH SODASH 1 "May 2022" "ALX Software Engineering Programme" "SODA SHELL - Simple Shell man page"
 
 .SH NAME
 sodash\fR \- simple UNIX command interpreter
@@ -11,7 +10,7 @@ sodash\fR \- simple UNIX command interpreter
 soda\fR [\fIfilename\fR]
 
 .SH COPYRIGHT
-soda is Copyright (C) 2022 by Yusuf Dahud and Kenny David
+soda is Copyright (C) 2022 by Joseph Mariga and Karl Kamakia
 
 .SH DESCRIPTION
 Soda\fR is a sh-compatible command language interpreter that executes commands read from the standard input or from a file.
@@ -53,7 +52,6 @@ If the search is successful, or if the command name contains one or more slashes
 
 .SH Environment
 \fBSodash\fR takes a copy from \fBBash\fR environment of the parent process where it was executed. The environment is an array of strings containing the variables in the format.
-
 When a program is invoked it is given an array of strings called the environment. This is a list of name-value pairs, of the form name=value.
 
 The shell provides several ways to manipulate the environment. On invocation, the shell scans its own environment and creates a parameter for each name found, automatically marking it for export to child processes. Executed commands inherit the environment. The export and declare -x commands allow parameters and functions to be added to and deleted from the environment.
@@ -93,10 +91,8 @@ The following builtin commands are supported:
 - Print help message of builtin command
 
 .SH SEE ALSO
-
 access(2), chdir(2), execve(2), _exit(2), exit(3), fflush(3), fork(2), free(3), isatty(3), getcwd(3), malloc(3), open(2), read(2), sh(1), signal(2), stat(2), wait(2), write(2)
-
 Sodash\fR takes basic functionality of the \fBsh\fR shell. This man page is based on the man page bash(1)
 
 .SH AUTHORS
-Damola Oluwafifunmi and  Hope Akpabio;
+Hope Akpabio and Damola Oluwafifunmi
